@@ -23,9 +23,14 @@ El repositorio contiene los siguientes archivos y carpetas:
 - **k8s/**
   - **deployment.yaml**: Manifiesto de Kubernetes para desplegar la aplicación.
 - **terraform/**
-  - **main.tf**: Configuración principal de Terraform.
-  - **variables.tf**: Definición de variables.
-  - **outputs.tf**: Definición de salidas.
+- **eks/**: Configuración específica para el clúster de EKS.
+- **iam/**: Configuración de roles y políticas IAM.
+- **salidas/**: Definiciones de las salidas de los recursos Terraform.
+- **proveedor/**: Configuración del proveedor de AWS.
+- **seguridad/**: Configuración de grupos de seguridad.
+- **terraform/**: Archivos principales de configuración de Terraform.
+- **terraform-copia-de-seguridad/**: Copia de seguridad de archivos Terraform.
+- **vpc/**: Configuración de la red virtual privada (VPC).
 
 #### **Instrucciones de Configuración y Ejecución**
 
@@ -59,11 +64,6 @@ El repositorio contiene los siguientes archivos y carpetas:
    - Verificar la correcta ejecución del pipeline en Jenkins.
    - Desplegar la aplicación en el clúster de EKS.
 
-#### **Archivos en el Repositorio de GitHub**
-
-Todos los archivos necesarios para esta prueba técnica, incluidos el Jenkinsfile, el código fuente de la aplicación "Hola Mundo" en Java, el Dockerfile, los manifiestos de Kubernetes y los archivos de configuración de Terraform, se encuentran disponibles en el repositorio de GitHub:
-
-[https://github.com/fenixblacknesh/prueba_tecnica](https://github.com/fenixblacknesh/prueba_tecnica)
 
 #### **Agradecimientos**
 
