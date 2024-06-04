@@ -1,2 +1,5 @@
-FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
+FROM openjdk:11
+COPY HelloWorld.java /usr/src/myapp/HelloWorld.java
+WORKDIR /usr/src/myapp
+RUN javac HelloWorld.java
+CMD ["java", "HelloWorld"]
